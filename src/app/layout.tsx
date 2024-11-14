@@ -12,6 +12,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const ubuntu = localFont({
+  src: "./fonts/Ubuntu.woff",
+  variable: "--font-ubuntu",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ubuntu.variable} antialiased`}
       >
         {children}
       </body>
